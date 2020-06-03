@@ -1,3 +1,5 @@
+let name, font;
+
 $(document).ready(function(){
     $("#only_button").hide();
     let currentQuiz=null;
@@ -26,7 +28,8 @@ $(document).ready(function(){
                             let finalResult = questions[currentQuiz].answers[i][1];
                             $("#question").text("name   ");
                             $("#question").append("<input type='text' id='name' name='n' value='"+finalAnswers[finalResult][0]+"'>");
-                            $("#question").append("<input type='text' id='font' name='font' value='"+finalAnswers[finalResult][1]+"'>")
+                            font = finalAnswers[finalResult][0];
+                            name = finalAnswers[finalResult][1];
                             $("#font").hide();
                             $("#options").empty();
                             $("#options").append('<img src=images/'+finalAnswers[finalResult][1]+'_single.jpg><br><br>');

@@ -30,10 +30,8 @@ $(document).ready(function(){
     ctx = $("#home")[0].getContext("2d");
 
     imgCat = new Image();
-	imgCat.src = "images/"+$("#cat_font").text()+".jpg";
-    //imgCat.src = "images/"+$("#font").text()+".jpg";
-    console.log($("#cat_font").text());
-    //我看不到~~
+	imgCat.src = "images/"+font+".jpg"; /////////////////////////
+    console.log(name);
     
     imgCat.onload = function(){
         let beginx=0; //裁減圖片的x軸座標，由左往右遞增
