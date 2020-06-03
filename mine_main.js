@@ -1,4 +1,5 @@
-let name, font;
+let name="test name";
+let font;
 
 $(document).ready(function(){
     $("#only_button").hide();
