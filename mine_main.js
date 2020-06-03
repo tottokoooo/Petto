@@ -1,4 +1,4 @@
-let name="test name";
+let make_name="test name";
 let font;
 
 $(document).ready(function(){
@@ -30,7 +30,7 @@ $(document).ready(function(){
                             $("#question").text("name   ");
                             $("#question").append("<input type='text' id='name' name='n' value='"+finalAnswers[finalResult][0]+"'>");
                             font = finalAnswers[finalResult][0];
-                            name = finalAnswers[finalResult][1];
+                            make_name = finalAnswers[finalResult][1];
                             $("#font").hide();
                             $("#options").empty();
                             $("#options").append('<img src=images/'+finalAnswers[finalResult][1]+'_single.jpg><br><br>');

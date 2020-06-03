@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     imgCat = new Image();
 	imgCat.src = "images/"+font+".jpg"; /////////////////////////
-    console.log(name);
+    console.log(make_name);
     
     imgCat.onload = function(){
         let beginx=0; //裁減圖片的x軸座標，由左往右遞增
