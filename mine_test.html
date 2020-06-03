@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>e-pet</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="mine_main.js"></script>
+        <script src="mine_data.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="tit">
+                <a href="index.html" id="logo_a">
+                    <img border="0" alt="petto" src="images/logo.png" width="300">
+                </a>
+            </div>
+        </header>
+
+		<form action="feed_cat.php" method="GET">
+        <!--<p style="font-size: 30px;"></p>-->
+        <div>
+            <h2 id="question">測驗出你命中注定的貓貓吧!</h2>
+            <div id="options"></div>
+        </div>
+        <input id="startButton" type="button" value="開始作答">
+
+        
+            <button type="submit" id="only_button" onmouseover="changeColor()" onmouseout="changeColorBack()">
+                <p id="start_button">feed it!</p>
+            </button>
+        </form>
+
+    </body>
+</html>
