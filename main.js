@@ -11,7 +11,7 @@ $(document).ready(function(){
         let beginx=0; //裁減圖片的x軸座標，由左往右遞增
         setInterval(() => {
             ctx.clearRect(0,0,300,120);
-            ctx.drawImage(imgCat, beginx_m[beginx], 10, 300, 300, 90, 0, 120, 120);
+            ctx.drawImage(imgCat, beginx_m[beginx], 10, 300, 300, 90, 0, 130, 130);
             beginx++;
             beginx%=3;
         }, 500);

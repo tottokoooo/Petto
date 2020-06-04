@@ -30,8 +30,15 @@ $(document).ready(function(){
     ctx = $("#home")[0].getContext("2d");
 
     imgCat = new Image();
-	imgCat.src = "images/"+font+".jpg"; /////////////////////////
-    console.log(make_name);
+    let cat_name;
+    let githubURL = new URL(location.href);
+    //alert('location.search: '+location.search);
+    let params = githubURL.searchParams;
+    for (let pair of params.entries()) {
+        cat_name = `${pair[1]}`;
+    }
+
+	imgCat.src = "images/"+cat_name+".jpg"; /////////////////////////
     
     imgCat.onload = function(){
         let beginx=0; //裁減圖片的x軸座標，由左往右遞增

@@ -1,6 +1,3 @@
-let make_name="test name";
-let font;
-
 $(document).ready(function(){
     $("#only_button").hide();
     let currentQuiz=null;
@@ -27,13 +24,12 @@ $(document).ready(function(){
                     if(val.checked){
                         if(isNaN(questions[currentQuiz].answers[i][1])){
                             let finalResult = questions[currentQuiz].answers[i][1];
-                            $("#question").text("name   ");
-                            $("#question").append("<input type='text' id='name' name='n' value='"+finalAnswers[finalResult][0]+"'>");
-                            font = finalAnswers[finalResult][0];
-                            make_name = finalAnswers[finalResult][1];
+                            $("#question").text(finalAnswers[finalResult][0]);
                             $("#font").hide();
                             $("#options").empty();
                             $("#options").append('<img src=images/'+finalAnswers[finalResult][1]+'_single.jpg><br><br>');
+                            $("#question").append("<input type='text' id='cat_name' name='cat_name' value='"+finalAnswers[finalResult][1]+"'>");
+                            $("#cat_name").hide();
                             currentQuiz=null;
                             $("#startButton").hide();
                             //放出餵養牠的按鈕!!!
