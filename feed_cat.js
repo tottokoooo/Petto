@@ -25,8 +25,19 @@ function update_life(){
 
 let beginx_m = [10, 320, 630];
 
+let SetMinute = 0;
+function Check_Time() {
+    SetMinute += 1;
+    let Check_i = document.getElementById("Check_i");
+
+    let Cal_Hour = Math.floor(SetMinute / 3600);
+    let Cal_Minute = Math.floor(Math.floor(SetMinute % 3600) / 60);
+
+    Check_i.innerHTML = Cal_Hour + ":" + Cal_Minute;
+}
+let mm = window.setInterval("Check_Time()", 1000);
+
 $(document).ready(function(){
-    //let mycamvas = document.getElementById("home");
     ctx = $("#home")[0].getContext("2d");
 
     imgCat = new Image();
