@@ -23,7 +23,7 @@ function onYouTubeIframeAPIReady(){
 }
 //當YouTube播放器準備好時
 function onPlayerReady(event){
-    player.playVideo();
+    //player.playVideo();
 }
 
 $(document).ready(function(){
