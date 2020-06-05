@@ -16,6 +16,10 @@ $(document).ready(function(){
             beginx%=3;
         }, 500);
     }
+    $("#introduction").hide();
+    $("#create_button").click(function(){
+        $("#introduction").toggle();
+    });
 });
 
 function changeColor(){$("#start_button").css("color", "black");}

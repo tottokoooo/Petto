@@ -34,6 +34,7 @@ $(document).ready(function(){
                             $("#startButton").hide();
                             //放出餵養牠的按鈕!!!
                             $("#only_button").show();
+                            if($("#question_cat_img")){$("#question_cat_img").hide();}
                         }else{
                             currentQuiz = questions[currentQuiz].answers[i][1]-1;
                             $("#question").text(questions[currentQuiz].question);

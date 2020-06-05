@@ -42,23 +42,28 @@ hr{
     width: 600px;
 }
 
-table{
-    width: 60%;
-    margin: auto;
-    font-size: 1.5em;
-}
-
 #birthday{
     font-family: 'Press Start 2P', cursive;
     font-size: 20px;
 }
 
-#name{
-    width: 100px;
-    height: 30px;
+table{
+    margin:0 auto;
 }
 
-#statue{
-    width: 1000px;
-    margin: 0px auto;
+#create_words{
+    font-family: 'Press Start 2P', cursive;
+    color:#e8e8e8;
+}
+
+#create_button{
+    font-family: 'Press Start 2P', cursive;
+    border:2px blue none;
+    background-color: white;
+    font-size:20px;
+    color:#e8e8e8;
+}
+
+#introduction{
+    font-family: '微軟正黑體';
 }

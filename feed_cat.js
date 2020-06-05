@@ -11,7 +11,7 @@ function changeColor(){$("#start_button").css("color", "black");}
 function changeColorBack(){$("#start_button").css("color", "gray");}
 
 let life = 100;
-var myVar=setInterval(function(){update_life()},5000);
+var myVar=setInterval(function(){update_life()},10000);
 function update_life(){
     life-=25;
     console.log(life);
@@ -26,10 +26,11 @@ function update_life(){
 let beginx_m = [10, 320, 630];
 
 $(document).ready(function(){
-    let mycamvas = document.getElementById("home");
+    //let mycamvas = document.getElementById("home");
     ctx = $("#home")[0].getContext("2d");
 
     imgCat = new Image();
+    food = new Image();
     let cat_name;
     let githubURL = new URL(location.href);
     //alert('location.search: '+location.search);
@@ -38,28 +39,43 @@ $(document).ready(function(){
         cat_name = `${pair[1]}`;
     }
 
-	imgCat.src = "images/"+cat_name+".jpg"; /////////////////////////
-    
+	imgCat.src = "images/"+cat_name+".jpg";
+
     imgCat.onload = function(){
         let beginx=0; //裁減圖片的x軸座標，由左往右遞增
         setInterval(() => {
-            ctx.clearRect(0,0,300,200);
+            ctx.clearRect(60,50,150,150);
+            console.log("draw cat");
             ctx.drawImage(imgCat, beginx_m[beginx], 10, 300, 300, 60, 50, 150, 150);
             beginx++;
             beginx%=3;
         }, 500);
     }
+
     $("#birthday").text(birthday.toLocaleDateString().slice(5));
 
     $("#only_button").click(function(){
-        if(life<100){
-            life+=25;
-            $("#life").attr("src","images/life"+life+".png");
-            console.log("feed");
-            console.log(life);
-        }else{
+        if(life>=100){
             console.log("我飽了!");
         }
+        else{
+            life+=25;
+            console.log("feed");
+            console.log(life);
+            //食物圖
+            let randomChildNumber = Math.floor(Math.random()*3);
+            if(randomChildNumber==0){food.src = "images/fish.png";}
+            else if(randomChildNumber==1){food.src = "images/can.png";}
+            else{food.src = "images/milk.png";}
+            console.log("draw food:",food);
+            food.onload = function(){ctx.drawImage(food, 0, 0, 300, 300, 220, 148, 100, 100);}
+
+            setTimeout(function(){
+                $("#life").attr("src","images/life"+life+".png");
+                ctx.clearRect(220,148,100,100);
+            },3000);
+        }
+
     });
 });
 
