@@ -27,5 +27,5 @@ function onPlayerReady(event){
 }
 
 $(document).ready(function(){
-    //$("#player").hide();
+    $("#player").hide();
 });
