@@ -1,19 +1,19 @@
 let birthday = localStorage.getItem("birth");
 birthday = birthday.split(" ");
 
-changeColor(() => {
+changeColor = () => {
   $("#start_button").css("color", "black");
-});
-changeColorBack(() => {
+};
+changeColorBack = () => {
   $("#start_button").css("color", "gray");
-});
+};
 
 let life = parseInt(localStorage.getItem("life"), 10);
 var myVar = setInterval(() => {
   update_life();
-}, 60000); //每1秒(1000)消耗一格生命
+}, 6000); //每1秒(1000)消耗一格生命
 
-update_life(() => {
+update_life = () => {
   life -= 25;
   //更新生命值圖片
   $("#life").attr("src", "images/life" + life + ".png");
@@ -23,12 +23,12 @@ update_life(() => {
     document.location.href = "game_over.html";
   }
   localStorage.setItem("life", life);
-});
+};
 
 let beginx_m = [10, 320, 630];
 
 let SetMinute = parseInt(localStorage.getItem("age_second"), 10);
-Check_Time(() => {
+Check_Time = () => {
   SetMinute += 1;
   let Check_i = document.getElementById("Check_i");
 
@@ -37,7 +37,7 @@ Check_Time(() => {
 
   Check_i.innerHTML = Cal_Hour + ":" + Cal_Minute;
   localStorage.setItem("age_second", SetMinute);
-});
+};
 window.setInterval("Check_Time()", 1000); //每秒把年齡加一秒
 
 $(document).ready(() => {

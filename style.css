@@ -1,73 +1,76 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
-canvas{
-    /* background-image: url(images/home.jpg); */
-    background-repeat: no-repeat;
-    background-size: 450px 450px;
+canvas {
+  /* background-image: url(images/home.jpg); */
+  background-repeat: no-repeat;
+  background-size: 450px 450px;
 }
 
-
-#logo_a{
-    font-family: 'Press Start 2P', cursive;
-    height: 200px;
-    text-align:center;
-    line-height:200px;
-    font-size: 40px;
+#logo_a {
+  font-family: "Press Start 2P", cursive;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 40px;
 }
 
-#start_button{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
-    color: gray;
+#start_button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  color: gray;
 }
 
-#back_to_the_game{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
-    color: gray;
+#back_to_the_game {
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  color: gray;
 }
 
-#only_button{
-    border: thin;
-    background-color: white;
+#only_button {
+  border: thin;
+  background-color: white;
 }
 
-#tit{
-    height: 180px;
+#tit {
+  height: 180px;
 }
 
-hr{
-    width: 600px;
+hr {
+  width: 600px;
 }
 
-#birthday{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+#birthday {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
 }
 
-table{
-    margin:0 auto;
+table {
+  margin: 0 auto;
 }
 
-#create_words{
-    font-family: 'Press Start 2P', cursive;
-    color:#e8e8e8;
+#create_words {
+  font-family: "Press Start 2P", cursive;
+  color: #e8e8e8;
 }
 
-#create_button{
-    font-family: 'Press Start 2P', cursive;
-    border:2px blue none;
-    background-color: white;
-    font-size:20px;
-    color:#e8e8e8;
+#create_button {
+  font-family: "Press Start 2P", cursive;
+  border: 2px blue none;
+  background-color: white;
+  font-size: 20px;
+  color: #e8e8e8;
 }
 
-#introduction{
-    font-family: '微軟正黑體';
+#introduction {
+  font-family: "微軟正黑體";
 }
 
-#Check_Txt{
-    font-family: 'Press Start 2P', cursive;
+#Check_Txt {
+  font-family: "Press Start 2P", cursive;
+}
+
+/*rwd*/
+@media screen and (max-width: 425px) {
 }

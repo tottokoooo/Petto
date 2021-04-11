@@ -48,6 +48,10 @@ $(document).ready(() => {
             }
 
             localStorage.setItem("type", finalAnswers[finalResult][1]); //紀錄種類
+            localStorage.setItem("life", "100");
+            localStorage.setItem("age_second", "0");
+            let birthday = new Date();
+            localStorage.setItem("birth", birthday);
           } else {
             currentQuiz = questions[currentQuiz].answers[i][1] - 1;
             $("#question").text(questions[currentQuiz].question);
@@ -70,10 +74,10 @@ $(document).ready(() => {
   $("#only_button").click(() => {
     localStorage.setItem("name", document.querySelector(".textContent").value); //紀錄名字
   });
-  localStorage.setItem("life", "100");
-  localStorage.setItem("age_second", "0");
-  let birthday = new Date();
-  localStorage.setItem("birth", birthday);
+  // localStorage.setItem("life", "100");
+  // localStorage.setItem("age_second", "0");
+  // let birthday = new Date();
+  // localStorage.setItem("birth", birthday);
 });
 
 changeColor(() => {

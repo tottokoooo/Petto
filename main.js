@@ -22,9 +22,9 @@ $(document).ready(() => {
   });
 });
 
-changeColor(() => {
+changeColor = () => {
   $("#start_button").css("color", "black");
-});
-changeColorBack(() => {
+};
+changeColorBack = () => {
   $("#start_button").css("color", "gray");
-});
+};
