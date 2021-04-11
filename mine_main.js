@@ -9,9 +9,9 @@ $(document).ready(() => {
       $("#options").empty();
       for (let x = 0; x < questions[0].answers.length; x++) {
         $("#options").append(
-          "<input name='options' type='radio' value=" +
+          "<label><input name='options' type='radio' value=" +
             x +
-            "<label>" +
+            ">" +
             questions[0].answers[x][0] +
             "</label><br><br>"
         );
@@ -58,9 +58,9 @@ $(document).ready(() => {
             $("#options").empty();
             for (let x = 0; x < questions[currentQuiz].answers.length; x++) {
               $("#options").append(
-                "<input name='options' type='radio' value" +
+                "<label><input name='options' type='radio' value" +
                   x +
-                  "<label>" +
+                  ">" +
                   questions[currentQuiz].answers[x][0] +
                   "</label><br><br>"
               );
