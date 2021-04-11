@@ -7,7 +7,7 @@ $(document).ready(() => {
   imgCat = new Image();
   imgCat.src = "images/gray.jpg"; //http://www.lizibuluo.com/8bit/#import-save
 
-  imgCat.onload = () => {
+  imgCat.onload = function () {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增
     setInterval(() => {
       ctx.clearRect(0, 0, 300, 120);
@@ -22,9 +22,9 @@ $(document).ready(() => {
   });
 });
 
-changeColor = () => {
+function changeColor() {
   $("#start_button").css("color", "black");
-};
-changeColorBack = () => {
+}
+function changeColorBack() {
   $("#start_button").css("color", "gray");
-};
+}

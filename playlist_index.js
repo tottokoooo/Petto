@@ -1,7 +1,7 @@
 var player; //YouTube播放器
 
 //當YouTube API準備好時
-onYouTubeIframeAPIReady = () => {
+function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     height: "390",
     width: "640",
@@ -18,11 +18,11 @@ onYouTubeIframeAPIReady = () => {
       onReady: onPlayerReady,
     },
   });
-};
+}
 //當YouTube播放器準備好時
-onPlayerReady = (event) => {
+function onPlayerReady(event) {
   player.playVideo();
-};
+}
 
 $(document).ready(() => {
   $("#player").hide();

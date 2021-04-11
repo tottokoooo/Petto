@@ -1,19 +1,19 @@
 let birthday = localStorage.getItem("birth");
 birthday = birthday.split(" ");
 
-changeColor = () => {
+function changeColor() {
   $("#start_button").css("color", "black");
-};
-changeColorBack = () => {
+}
+function changeColorBack() {
   $("#start_button").css("color", "gray");
-};
+}
 
 let life = parseInt(localStorage.getItem("life"), 10);
 var myVar = setInterval(() => {
   update_life();
 }, 6000); //每1秒(1000)消耗一格生命
 
-update_life = () => {
+function update_life() {
   life -= 25;
   //更新生命值圖片
   $("#life").attr("src", "images/life" + life + ".png");
@@ -23,12 +23,12 @@ update_life = () => {
     document.location.href = "game_over.html";
   }
   localStorage.setItem("life", life);
-};
+}
 
 let beginx_m = [10, 320, 630];
 
 let SetMinute = parseInt(localStorage.getItem("age_second"), 10);
-Check_Time = () => {
+function Check_Time() {
   SetMinute += 1;
   let Check_i = document.getElementById("Check_i");
 
@@ -37,7 +37,7 @@ Check_Time = () => {
 
   Check_i.innerHTML = Cal_Hour + ":" + Cal_Minute;
   localStorage.setItem("age_second", SetMinute);
-};
+}
 window.setInterval("Check_Time()", 1000); //每秒把年齡加一秒
 
 $(document).ready(() => {
@@ -48,7 +48,7 @@ $(document).ready(() => {
   let cat_name = localStorage.getItem("type");
   imgCat.src = "images/" + cat_name + ".jpg";
 
-  imgCat.onload = () => {
+  imgCat.onload = function () {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增
     setInterval(() => {
       ctx.clearRect(60, 50, 150, 150);
@@ -85,11 +85,11 @@ $(document).ready(() => {
         food.src = "images/milk.png";
       }
       //console.log("draw food:", food);
-      food.onload = () => {
+      food.onload = function () {
         ctx.drawImage(food, 0, 0, 300, 300, 220, 148, 100, 100);
       };
 
-      setTimeout(() => {
+      setTimeout(function () {
         $("#life").attr("src", "images/life" + life + ".png");
         ctx.clearRect(220, 148, 100, 100);
       }, 3000);

@@ -76,9 +76,9 @@ $(document).ready(() => {
   });
 });
 
-changeColor(() => {
+function changeColor() {
   $("#start_button").css("color", "black");
-});
-changeColorBack(() => {
+}
+function changeColorBack() {
   $("#start_button").css("color", "gray");
-});
+}
