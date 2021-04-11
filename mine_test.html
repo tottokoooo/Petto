@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>e-pet</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="http://www.youtube.com/iframe_api"></script>
-        <script src="playlist_mine_test.js"></script>
-        <script src="mine_main.js"></script>
-        <script src="mine_data.js"></script>
-    </head>
-    <body>
-        <header>
-            <div id="tit">
-                <a href="index.html" id="logo_a">
-                    <img border="0" alt="petto" src="images/logo.png" width="300">
-                </a>
-            </div>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>e-pet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://www.youtube.com/iframe_api"></script>
+    <script src="playlist_mine_test.js"></script>
+    <script src="mine_main.js"></script>
+    <script src="mine_data.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="tit">
+        <a href="index.html" id="logo_a">
+          <img border="0" alt="petto" src="images/logo.png" width="300" />
+        </a>
+      </div>
+    </header>
 
-        <div id="question_cat_img"><img border="0" alt="what_cat_do_you_fit?" src="images/question_cat.jpg" width="100"></div>
+    <div id="question_cat_img">
+      <img
+        border="0"
+        alt="what_cat_do_you_fit?"
+        src="images/question_cat.jpg"
+        width="100"
+      />
+    </div>
 
-		<form action="feed_cat.html" method="GET">
-        <div>
-            <h2 id="question">測驗出你命中注定的貓貓吧!</h2>
-            <div id="options"></div>
-        </div>
-        <input id="startButton" type="button" value="開始作答">
-            <button type="submit" id="only_button" onmouseover="changeColor()" onmouseout="changeColorBack()">
-                <p id="start_button">feed it!</p>
-            </button>
-        </form>
+    <form action="feed_cat.html" method="GET">
+      <div>
+        <h2 id="question">測驗出你命中注定的貓貓吧!</h2>
+        <div id="options"></div>
+      </div>
+      <input id="startButton" type="button" value="開始作答" />
+      <button
+        type="submit"
+        id="only_button"
+        onmouseover="changeColor()"
+        onmouseout="changeColorBack()"
+      >
+        <p id="start_button">feed it!</p>
+      </button>
+    </form>
 
-        <div id="player"><p>hi</p></div> <!--YouTube影片撥放器-->
-
-    </body>
+    <div id="player"><p>hi</p></div>
+    <!--YouTube影片撥放器-->
+  </body>
 </html>
