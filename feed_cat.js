@@ -48,7 +48,7 @@ $(document).ready(() => {
   let cat_name = localStorage.getItem("type");
   imgCat.src = "images/" + cat_name + ".jpg";
 
-  imgCat.onload = function () {
+  imgCat.onload = () => {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增
     setInterval(() => {
       ctx.clearRect(60, 50, 150, 150);
@@ -84,7 +84,7 @@ $(document).ready(() => {
         food.src = "images/milk.png";
       }
       //console.log("draw food:", food);
-      food.onload = function () {
+      food.onload = () => {
         ctx.drawImage(food, 0, 0, 300, 300, 220, 148, 100, 100);
       };
 

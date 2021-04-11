@@ -7,7 +7,7 @@ $(document).ready(() => {
   imgCat = new Image();
   imgCat.src = "images/gray.jpg"; //http://www.lizibuluo.com/8bit/#import-save
 
-  imgCat.onload = function () {
+  imgCat.onload = () => {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增
     setInterval(() => {
       ctx.clearRect(0, 0, 300, 120);
