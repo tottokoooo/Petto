@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> <!--修正http-->
-        <title>e-pet</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="http://www.youtube.com/iframe_api"></script>
-        <script src="playlist_index.js"></script>
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <header>
-            <div id="tit">
-                <a href="index.html" id="logo_a">
-                    <img border="0" alt="petto" src="images/logo.png" width="300">
-                </a>
-            </div>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <!--修正http-->
+    <title>e-pet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://www.youtube.com/iframe_api"></script>
+    <script src="playlist_index.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="tit">
+        <a href="index.html" id="logo_a">
+          <img border="0" alt="petto" src="images/logo.png" width="200" />
+        </a>
+      </div>
+    </header>
 
-        <div>
-            <canvas id="home" width="300" height="120"></canvas>
-            <br>
-            <form action="#">
-                <button formaction="mine_test.html" type="submit" id="only_button" onmouseover="changeColor()" onmouseout="changeColorBack()">
-                    <p id="start_button">start</p>
-                </button>
-            </form>
-        </div>
-        <div id="player"></div> <!--YouTube影片撥放器-->
-		
-        <footer class="container">
-            <p id="create_words">&copy; by <a id="create_button" href="#" style="text-decoration:none;">Winnie</a></p>
-            <p id="introduction">hi!&nbsp;我是元智大學資工系的學生<b>許晴</b>ヽ(*´∀`)ﾉ<br>這是我做的一個電子貓遊戲，<br>等下會有一個心理測驗，<br>可以測出你適合養甚麼貓咪喔~<br>好好養他愛他~♥</p>
-        </footer>
-    </body>
+    <div>
+      <canvas id="home_page"></canvas>
+      <br />
+      <form action="#">
+        <button
+          formaction="mine_test.html"
+          type="submit"
+          id="only_button"
+          onmouseover="changeColor()"
+          onmouseout="changeColorBack()"
+        >
+          <p id="start_button">start</p>
+        </button>
+      </form>
+    </div>
+    <div id="player"></div>
+    <!--YouTube影片撥放器-->
+
+    <footer class="container">
+      <p id="create_words">
+        &copy; by
+        <a id="create_button" href="#" style="text-decoration: none">Winnie</a>
+      </p>
+      <p id="introduction">
+        hi!&nbsp;我是元智大學資工系的學生<b>許晴</b>ヽ(*´∀`)ﾉ<br />這是我做的一個電子貓遊戲，<br />等下會有一個心理測驗，<br />可以測出你適合養甚麼貓咪喔~<br />好好養他愛他~♥
+      </p>
+    </footer>
+  </body>
 </html>

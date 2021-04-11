@@ -27,11 +27,15 @@ $(document).ready(() => {
             $("#question").text("幫她取個名字吧:");
             $("#font").hide();
             $("#options").empty();
-            $("#options").append(
-              "<img src=images/" +
-                finalAnswers[finalResult][1] +
-                "_single.jpg><br><br>"
-            );
+            // $("#options").append(
+            //   "<img src=images/" +
+            //     finalAnswers[finalResult][1] +
+            //     "_single.jpg><br><br>"
+            // );
+            let yourCat =
+              "images/" + finalAnswers[finalResult][1] + "_single.jpg";
+            $("#question_cat_img img").attr("src", yourCat);
+            $("#question_cat_img img").attr("width", "290");
             //放取名字框框
             $("#question").append(
               "<input type='text' id='cat_name' class='textContent' name='cat_name' value='" +
@@ -43,9 +47,9 @@ $(document).ready(() => {
             $("#startButton").hide();
             //放出餵養牠的按鈕!!!
             $("#only_button").show();
-            if ($("#question_cat_img")) {
-              $("#question_cat_img").hide();
-            }
+            // if ($("#question_cat_img")) {
+            //   $("#question_cat_img").hide();
+            // }
 
             localStorage.setItem("type", finalAnswers[finalResult][1]); //紀錄種類
             localStorage.setItem("life", "100");
