@@ -33,13 +33,10 @@ $(document).ready(function () {
                 "_single.jpg><br><br>"
             );
             //放取名字框框
-            // $("#question").append(
-            //   "<input type='text' id='cat_name' class='textContent' name='cat_name' value='" +
-            //     finalAnswers[finalResult][1] +
-            //     "'>"
-            // );
             $("#question").append(
-              "<input type='text' id='cat_name' class='textContent' name='cat_name'>"
+              "<input type='text' id='cat_name' class='textContent' name='cat_name' value='" +
+                finalAnswers[finalResult][1] +
+                "'>"
             );
 
             currentQuiz = null;
@@ -50,12 +47,7 @@ $(document).ready(function () {
               $("#question_cat_img").hide();
             }
 
-            //let st1 = document.querySelector(".textContent").value;
-            // localStorage.setItem(
-            //   "naga",
-            //   document.querySelector(".textContent").value
-            // ); //存名字
-            localStorage.setItem("type", finalAnswers[finalResult][1]); //存種類
+            localStorage.setItem("type", finalAnswers[finalResult][1]); //紀錄種類
           } else {
             currentQuiz = questions[currentQuiz].answers[i][1] - 1;
             $("#question").text(questions[currentQuiz].question);
@@ -76,8 +68,12 @@ $(document).ready(function () {
     }
   });
   $("#only_button").click(function () {
-    localStorage.setItem("naga", document.querySelector(".textContent").value); //存名字
+    localStorage.setItem("name", document.querySelector(".textContent").value); //紀錄名字
   });
+  localStorage.setItem("life", "100");
+  localStorage.setItem("age_second", "0");
+  let birthday = new Date();
+  localStorage.setItem("birth", birthday);
 });
 
 function changeColor() {
