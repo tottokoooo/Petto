@@ -1,18 +1,19 @@
 let birthday = localStorage.getItem("birth");
 birthday = birthday.split(" ");
 
-function changeColor() {
+changeColor(() => {
   $("#start_button").css("color", "black");
-}
-function changeColorBack() {
+});
+changeColorBack(() => {
   $("#start_button").css("color", "gray");
-}
+});
 
 let life = parseInt(localStorage.getItem("life"), 10);
-var myVar = setInterval(function () {
+var myVar = setInterval(() => {
   update_life();
 }, 60000); //每1秒(1000)消耗一格生命
-function update_life() {
+
+update_life(() => {
   life -= 25;
   //更新生命值圖片
   $("#life").attr("src", "images/life" + life + ".png");
@@ -22,12 +23,12 @@ function update_life() {
     document.location.href = "game_over.html";
   }
   localStorage.setItem("life", life);
-}
+});
 
 let beginx_m = [10, 320, 630];
 
 let SetMinute = parseInt(localStorage.getItem("age_second"), 10);
-function Check_Time() {
+Check_Time(() => {
   SetMinute += 1;
   let Check_i = document.getElementById("Check_i");
 
@@ -36,10 +37,10 @@ function Check_Time() {
 
   Check_i.innerHTML = Cal_Hour + ":" + Cal_Minute;
   localStorage.setItem("age_second", SetMinute);
-}
+});
 window.setInterval("Check_Time()", 1000); //每秒把年齡加一秒
 
-$(document).ready(function () {
+$(document).ready(() => {
   ctx = $("#home")[0].getContext("2d"); //畫筆
 
   imgCat = new Image();
@@ -65,7 +66,7 @@ $(document).ready(function () {
 
   //應該要寫上重新打開畫面時可以讀到他的年齡
 
-  $("#only_button").click(function () {
+  $("#only_button").click(() => {
     if (life >= 100) {
       //console.log("我飽了!");
     } else {
@@ -87,7 +88,7 @@ $(document).ready(function () {
         ctx.drawImage(food, 0, 0, 300, 300, 220, 148, 100, 100);
       };
 
-      setTimeout(function () {
+      setTimeout(() => {
         $("#life").attr("src", "images/life" + life + ".png");
         ctx.clearRect(220, 148, 100, 100);
       }, 3000);

@@ -1,9 +1,9 @@
-function changeColor() {
+changeColor(() => {
   $("#start_button").css("color", "black");
-}
-function changeColorBack() {
+});
+changeColorBack(() => {
   $("#start_button").css("color", "gray");
-}
+});
 
 localStorage.removeItem("name");
 localStorage.removeItem("type");

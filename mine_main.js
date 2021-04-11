@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(() => {
   $("#only_button").hide();
   let currentQuiz = null;
-  $("#startButton").click(function () {
+  $("#startButton").click(() => {
     if (currentQuiz == null) {
       currentQuiz = 0;
       //顯示題目
@@ -20,7 +20,7 @@ $(document).ready(function () {
       $("#startButton").attr("value", "Next"); //attr: 更動它的屬性
     } else {
       //尋訪每個選項是否有被選取
-      $.each($(":radio"), function (i, val) {
+      $.each($(":radio"), (i, val) => {
         if (val.checked) {
           if (isNaN(questions[currentQuiz].answers[i][1])) {
             let finalResult = questions[currentQuiz].answers[i][1];
@@ -67,7 +67,7 @@ $(document).ready(function () {
       });
     }
   });
-  $("#only_button").click(function () {
+  $("#only_button").click(() => {
     localStorage.setItem("name", document.querySelector(".textContent").value); //紀錄名字
   });
   localStorage.setItem("life", "100");
@@ -76,9 +76,9 @@ $(document).ready(function () {
   localStorage.setItem("birth", birthday);
 });
 
-function changeColor() {
+changeColor(() => {
   $("#start_button").css("color", "black");
-}
-function changeColorBack() {
+});
+changeColorBack(() => {
   $("#start_button").css("color", "gray");
-}
+});
