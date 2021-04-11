@@ -58,6 +58,7 @@ $(document).ready(() => {
       beginx %= 3;
     }, 500);
   };
+  $("#name").text(localStorage.getItem("name"));
 
   life = parseInt(localStorage.getItem("life"), 10);
   $("#life").attr("src", "images/life" + life + ".png");

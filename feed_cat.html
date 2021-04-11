@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>e-pet</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="http://www.youtube.com/iframe_api"></script>
-        <script src="playlist_feed_cat.js"></script>
-        <script src="feed_cat.js"></script>
-    </head>
-    <body>
-        <header>
-            <div id="tit">
-                <a href="javascript:void(0)" id="logo_a" disabled="disabled">
-                    <img border="0" alt="petto" src="images/logo.png" width="300">
-                </a>
-            </div>
-        </header>
-        <hr/>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>e-pet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://www.youtube.com/iframe_api"></script>
+    <script src="playlist_feed_cat.js"></script>
+    <script src="feed_cat.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="tit">
+        <a href="javascript:void(0)" id="logo_a" disabled="disabled">
+          <img border="0" alt="petto" src="images/logo.png" width="300" />
+        </a>
+      </div>
+    </header>
+    <hr />
 
-        <table><tr>
-            <!--<td><img id="life" border="0" alt="life" src="images/life100.png" width="140"></td>-->
-            <td><img id="life" border="0" alt="life" width="140"></td>
-            <td width="20px"></td>
-            <td><img border="0" alt="birthday" src="images/birthday_cake.png" width="60"></td>
-            <td><p id="birthday"></p></td>
-            <td width="20px"></td>
-            <td><span id="Check_Txt">Age-<span id="Check_i">0:0</span></spa</td>
-        </tr></table>
+    <table>
+      <tr>
+        <td><span id="Check_Txt">name:</span></td>
+        <td colspan="2"><span id="name"></span></td>
+      </tr>
+      <tr>
+        <td><img id="life" border="0" alt="life" width="140" /></td>
+        <td width="20px"></td>
+        <td>
+          <img
+            border="0"
+            alt="birthday"
+            src="images/birthday_cake.png"
+            width="60"
+          />
+        </td>
+        <td><p id="birthday"></p></td>
+        <td width="20px"></td>
+        <td>
+          <span id="Check_Txt">Age-<span id="Check_i">0:0</span></span>
+        </td>
+      </tr>
+    </table>
 
-        <canvas id="home" width="300" height="200"></canvas><hr/>
-        <button formaction="mine_test.html" type="submit" id="only_button" onmouseover="changeColor()" onmouseout="changeColorBack()"><p id="start_button">feed</p></button>
-        <div id="player"></div> <!--YouTube影片撥放器-->
-        
-    </body>
+    <canvas id="home" width="300" height="200"></canvas>
+    <hr />
+    <button
+      formaction="mine_test.html"
+      type="submit"
+      id="only_button"
+      onmouseover="changeColor()"
+      onmouseout="changeColorBack()"
+    >
+      <p id="start_button">feed</p>
+    </button>
+    <div id="player"></div>
+    <!--YouTube影片撥放器-->
+  </body>
 </html>

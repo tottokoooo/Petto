@@ -71,6 +71,10 @@ table {
   font-family: "Press Start 2P", cursive;
 }
 
+#name {
+  font-family: "Press Start 2P", cursive;
+}
+
 /*rwd*/
 @media screen and (max-width: 425px) {
 }

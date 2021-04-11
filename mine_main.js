@@ -74,10 +74,6 @@ $(document).ready(() => {
   $("#only_button").click(() => {
     localStorage.setItem("name", document.querySelector(".textContent").value); //紀錄名字
   });
-  // localStorage.setItem("life", "100");
-  // localStorage.setItem("age_second", "0");
-  // let birthday = new Date();
-  // localStorage.setItem("birth", birthday);
 });
 
 changeColor(() => {
