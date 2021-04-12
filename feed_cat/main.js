@@ -11,7 +11,7 @@ function changeColorBack() {
 let life = parseInt(localStorage.getItem("life"), 10);
 var myVar = setInterval(() => {
   update_life();
-}, 100000); //每1秒(1000)消耗一格生命
+}, 1000); //每1秒(1000)消耗一格生命
 
 function update_life() {
   life -= 25;
@@ -20,7 +20,7 @@ function update_life() {
   //生命值<0
   if (life == -25) {
     clearTimeout(myVar);
-    document.location.href = "../game_over/game_over.html";
+    document.location.href = "../game_over/index.html";
   }
   localStorage.setItem("life", life);
 }
