@@ -12,19 +12,19 @@ body {
 }
 
 #tit {
-  height: 300px;
+  height: 150px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #logo_img {
-  width: 600px;
+  width: 300px;
 }
 
 /* 首頁的貓咪 canvas*/
 #home_page {
-  width: 600px;
-  height: 350px;
+  width: 300px;
+  height: 200px;
   background-repeat: no-repeat;
   border: 2px solid black;
   background-color: cadetblue;
@@ -33,7 +33,7 @@ body {
 /*首頁的開始按紐*/
 #start_button {
   font-family: "Press Start 2P", cursive;
-  font-size: 50px; /*字級*/
+  font-size: 25px; /*字級*/
   color: gray; /*本身的顏色*/
 }
 
@@ -46,30 +46,30 @@ body {
   font-family: "Press Start 2P", cursive;
   border: 2px blue none;
   background-color: white;
-  font-size: 30px;
+  font-size: 15px;
   color: #e8e8e8;
 }
 
 /*首頁的自我介紹*/
 #introduction {
   font-family: "微軟正黑體";
-  font-size: 30px;
+  font-size: 15px;
 }
 /*----------心理測驗-------------------------------------------*/
 #question_cat_img img {
-  width: 320px;
+  width: 180px;
 }
 #question {
   font-family: "微軟正黑體";
-  font-size: 40px;
+  font-size: 20px;
 }
 #options {
   font-family: "微軟正黑體";
-  font-size: 40px;
+  font-size: 20px;
 }
 #startButton {
   border: 0;
-  font-size: 40px;
+  font-size: 20px;
   border-radius: 5px;
   /*outline: none; 按下去時不會出現邊框*/
 }
@@ -79,44 +79,44 @@ body {
   background: rgb(231, 231, 231);
   border: 0 none;
   border-radius: 10px;
-  height: 50px;
-  font-size: 40px;
-  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  width: 120px;
 }
 /*----------養貓-------------------------------------------*/
 #home {
-  width: 600px;
-  height: 500px;
+  width: 250px;
+  height: 180px;
   background-repeat: no-repeat;
-  /* border: 2px solid black;
-  background-color: cadetblue; */
+  border: 2px solid black;
+  background-color: cadetblue;
 }
 
 #life {
-  width: 250px;
+  width: 110px;
 }
 
 #birthday_cake {
-  width: 100px;
+  width: 60px;
 }
 
 #birthday {
   font-family: "Press Start 2P", cursive;
-  font-size: 40px;
+  font-size: 18px;
 }
 
 #name {
   font-family: "Press Start 2P", cursive;
-  font-size: 40px;
+  font-size: 18px;
 }
 
 #Check_Txt {
   font-family: "Press Start 2P", cursive;
-  font-size: 40px;
+  font-size: 18px;
 }
 
 #cat_area {
-  height: 800px;
+  height: 310px;
 }
 
 #only_button {
@@ -125,7 +125,7 @@ body {
 }
 
 #game_over_cat {
-  width: 300px;
+  width: 180px;
 }
 
 /* computer */
