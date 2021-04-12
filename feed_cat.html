@@ -6,6 +6,7 @@
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-pet</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -20,39 +21,39 @@
   <body>
     <header>
       <div id="tit">
-        <a href="javascript:void(0)" id="logo_a" disabled="disabled">
-          <img border="0" alt="petto" src="images/logo.png" width="200" />
+        <a href="javascript:void(0)" id="logo" disabled="disabled">
+          <img id="logo_img" border="0" alt="petto" src="images/logo.png" />
         </a>
       </div>
     </header>
-    <hr />
+    <div id="cat_area">
+      <hr />
+      <table>
+        <tr>
+          <td><span id="Check_Txt">name:</span></td>
+          <td colspan="5"><span id="name" style="float: left"></span></td>
+        </tr>
+        <tr>
+          <td><img id="life" alt="life" /></td>
+          <td style="width: 50px"></td>
+          <td>
+            <img
+              id="birthday_cake"
+              alt="birthday"
+              src="images/birthday_cake.png"
+            />
+          </td>
+          <td><p id="birthday"></p></td>
+          <td style="width: 20px"></td>
+          <td>
+            <span id="Check_Txt">Age-<span id="Check_i">0:0</span></span>
+          </td>
+        </tr>
+      </table>
 
-    <table>
-      <tr>
-        <td><span id="Check_Txt">name:</span></td>
-        <td colspan="2"><span id="name"></span></td>
-      </tr>
-      <tr>
-        <td><img id="life" border="0" alt="life" width="140" /></td>
-        <td width="20px"></td>
-        <td>
-          <img
-            border="0"
-            alt="birthday"
-            src="images/birthday_cake.png"
-            width="60"
-          />
-        </td>
-        <td><p id="birthday"></p></td>
-        <td width="20px"></td>
-        <td>
-          <span id="Check_Txt">Age-<span id="Check_i">0:0</span></span>
-        </td>
-      </tr>
-    </table>
-
-    <canvas id="home" width="300" height="200"></canvas>
-    <hr />
+      <canvas id="home" width="300" height="200"></canvas>
+      <hr />
+    </div>
     <button
       formaction="mine_test.html"
       type="submit"

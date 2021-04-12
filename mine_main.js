@@ -35,7 +35,6 @@ $(document).ready(() => {
             let yourCat =
               "images/" + finalAnswers[finalResult][1] + "_single.jpg";
             $("#question_cat_img img").attr("src", yourCat);
-            $("#question_cat_img img").attr("width", "290");
             //放取名字框框
             $("#question").append(
               "<input type='text' id='cat_name' class='textContent' name='cat_name' value='" +

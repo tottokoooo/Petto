@@ -2,26 +2,38 @@
 body {
   text-align: center;
 }
+/*每頁上方的LOGO*/
+#logo {
+  font-family: "Press Start 2P", cursive;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* 首頁的貓咪 */
+#tit {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo_img {
+  width: 600px;
+}
+
+/* 首頁的貓咪 canvas*/
 #home_page {
-  width: 200;
-  height: 200;
+  width: 600px;
+  height: 350px;
   background-repeat: no-repeat;
   /* border: 2px solid black;
   background-color: cadetblue; */
 }
 
-/*每頁上方的LOGO*/
-#logo_a {
-  font-family: "Press Start 2P", cursive;
-  line-height: 150px; /*行距*/
-}
-
 /*首頁的開始按紐*/
 #start_button {
   font-family: "Press Start 2P", cursive;
-  font-size: 25px; /*字級*/
+  font-size: 50px; /*字級*/
   color: gray; /*本身的顏色*/
 }
 
@@ -34,69 +46,161 @@ body {
   font-family: "Press Start 2P", cursive;
   border: 2px blue none;
   background-color: white;
-  font-size: 20px;
+  font-size: 30px;
   color: #e8e8e8;
 }
 
 /*首頁的自我介紹*/
 #introduction {
   font-family: "微軟正黑體";
-  font-size: 15px;
+  font-size: 30px;
 }
 /*----------心理測驗-------------------------------------------*/
+#question_cat_img img {
+  width: 320px;
+}
 #question {
   font-family: "微軟正黑體";
-  font-size: 20px;
+  font-size: 40px;
 }
 #options {
   font-family: "微軟正黑體";
-  font-size: 20px;
+  font-size: 40px;
 }
 #startButton {
   border: 0;
-  font-size: 20px;
+  font-size: 40px;
   border-radius: 5px;
   /*outline: none; 按下去時不會出現邊框*/
-}
-/*----------養貓-------------------------------------------*/
-#home {
-  width: 200;
-  height: 200;
-  background-repeat: no-repeat;
-}
-
-#birthday {
-  font-family: "Press Start 2P", cursive;
-  font-size: 20px;
-}
-
-table {
-  margin: 0 auto;
-}
-
-#name {
-  font-family: "Press Start 2P", cursive;
-}
-
-#Check_Txt {
-  font-family: "Press Start 2P", cursive;
 }
 
 #cat_name {
   cursor: pointer; /*指標過去時會變成手指*/
   background: rgb(231, 231, 231);
   border: 0 none;
-  border-radius: 5px;
-  height: 25px;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 40px;
+  width: 200px;
 }
-/*----------遊戲結束-------------------------------------------*/
+/*----------養貓-------------------------------------------*/
+#home {
+  width: 600px;
+  height: 500px;
+  background-repeat: no-repeat;
+  /* border: 2px solid black;
+  background-color: cadetblue; */
+}
 
-/*----------全-------------------------------------------*/
+#life {
+  width: 250px;
+}
+
+#birthday_cake {
+  width: 100px;
+}
+
+#birthday {
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+}
+
+#name {
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+}
+
+#Check_Txt {
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+}
+
+#cat_area {
+  height: 800px;
+}
+
 #only_button {
   border: thin;
   background-color: white;
 }
 
-/*----------RWD-------------------------------------------*/
-@media screen and (max-width: 425px) {
+#game_over_cat {
+  width: 300px;
+}
+
+/* computer */
+@media screen and (min-width: 426px) {
+  #tit {
+    height: 100px;
+  }
+
+  #logo_img {
+    width: 200px;
+  }
+
+  /* 首頁的貓咪 */
+  #home_page {
+    width: 200;
+    height: 200;
+  }
+
+  /*首頁的開始按紐*/
+  #start_button {
+    font-size: 25px; /*字級*/
+  }
+
+  #create_button {
+    font-size: 20px;
+  }
+
+  /*首頁的自我介紹*/
+  #introduction {
+    font-size: 15px;
+  }
+  /*----------心理測驗-------------------------------------------*/
+  #question_cat_img img {
+    width: 140px;
+  }
+  #question {
+    font-size: 20px;
+  }
+  #options {
+    font-size: 20px;
+  }
+  #startButton {
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  #cat_name {
+    border-radius: 5px;
+    height: 25px;
+    font-size: 20px;
+    width: 100px;
+  }
+  /*----------養貓-------------------------------------------*/
+  #home {
+    width: 200;
+    height: 200;
+  }
+
+  #life {
+    width: 140px;
+  }
+
+  #birthday_cake {
+    width: 60px;
+  }
+
+  #birthday {
+    font-size: 20px;
+  }
+
+  #cat_area {
+    height: 800px;
+  }
+
+  #game_over_cat {
+    width: 100px;
+  }
 }
