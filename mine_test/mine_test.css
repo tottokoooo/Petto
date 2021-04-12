@@ -1,3 +1,4 @@
+/*----------首頁-------------------------------------------*/
 body {
   text-align: center;
 }
@@ -38,6 +39,12 @@ body {
   /*outline: none; 按下去時不會出現邊框*/
 }
 
+#start_button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px; /*字級*/
+  color: gray; /*本身的顏色*/
+}
+
 #cat_name {
   cursor: pointer; /*指標過去時會變成手指*/
   background: rgb(231, 231, 231);
@@ -63,7 +70,17 @@ body {
     width: 200px;
   }
 
-  /*----------心理測驗-------------------------------------------*/
+  /* 首頁的貓咪 */
+  #home_page {
+    width: 400px;
+    height: 200px;
+  }
+
+  /*首頁的開始按紐*/
+  #start_button {
+    font-size: 25px; /*字級*/
+  }
+
   #question_cat_img img {
     width: 180px;
   }
@@ -83,5 +100,8 @@ body {
     height: 25px;
     font-size: 20px;
     width: 100px;
+  }
+  #start_button {
+    font-size: 25px; /*字級*/
   }
 }

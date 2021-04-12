@@ -30,6 +30,12 @@ body {
   width: 180px;
 }
 
+#start_button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px; /*字級*/
+  color: gray; /*本身的顏色*/
+}
+
 /* computer */
 @media screen and (min-width: 426px) {
   #tit {
@@ -42,5 +48,9 @@ body {
 
   #game_over_cat {
     width: 150px;
+  }
+
+  #start_button {
+    font-size: 25px; /*字級*/
   }
 }

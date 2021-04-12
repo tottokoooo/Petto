@@ -60,6 +60,12 @@ body {
   background-color: white;
 }
 
+#start_button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px; /*字級*/
+  color: gray; /*本身的顏色*/
+}
+
 /* computer */
 @media screen and (min-width: 426px) {
   #tit {
@@ -103,5 +109,9 @@ body {
 
   #Check_Txt {
     font-size: 20px;
+  }
+
+  #start_button {
+    font-size: 25px; /*字級*/
   }
 }
