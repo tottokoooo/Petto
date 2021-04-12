@@ -20,7 +20,7 @@ function update_life() {
   //生命值<0
   if (life == -25) {
     clearTimeout(myVar);
-    document.location.href = "game_over.html";
+    document.location.href = "../game_over/game_over.html";
   }
   localStorage.setItem("life", life);
 }
