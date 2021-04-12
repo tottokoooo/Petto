@@ -11,7 +11,7 @@ function changeColorBack() {
 let life = parseInt(localStorage.getItem("life"), 10);
 var myVar = setInterval(() => {
   update_life();
-}, 6000); //每1秒(1000)消耗一格生命
+}, 100000); //每1秒(1000)消耗一格生命
 
 function update_life() {
   life -= 25;
