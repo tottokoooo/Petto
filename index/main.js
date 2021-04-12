@@ -5,7 +5,7 @@ $(document).ready(() => {
   ctx = $("#home_page")[0].getContext("2d"); //在極少數jquary取得canvas的情況下需要[0]
 
   imgCat = new Image();
-  imgCat.src = "images/gray.jpg"; //http://www.lizibuluo.com/8bit/#import-save
+  imgCat.src = "../images/gray.jpg"; //http://www.lizibuluo.com/8bit/#import-save
 
   imgCat.onload = function () {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增

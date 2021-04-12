@@ -16,7 +16,7 @@ var myVar = setInterval(() => {
 function update_life() {
   life -= 25;
   //更新生命值圖片
-  $("#life").attr("src", "images/life" + life + ".png");
+  $("#life").attr("src", "../images/life" + life + ".png");
   //生命值<0
   if (life == -25) {
     clearTimeout(myVar);
@@ -46,7 +46,7 @@ $(document).ready(() => {
   imgCat = new Image();
   food = new Image();
   let cat_name = localStorage.getItem("type");
-  imgCat.src = "images/" + cat_name + ".jpg";
+  imgCat.src = "../images/" + cat_name + ".jpg";
 
   imgCat.onload = function () {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增
@@ -61,7 +61,7 @@ $(document).ready(() => {
   $("#name").text(localStorage.getItem("name"));
 
   life = parseInt(localStorage.getItem("life"), 10);
-  $("#life").attr("src", "images/life" + life + ".png");
+  $("#life").attr("src", "../images/life" + life + ".png");
 
   $("#birthday").text(birthday.slice(1, 3));
 
@@ -78,11 +78,11 @@ $(document).ready(() => {
       //食物圖
       let randomChildNumber = Math.floor(Math.random() * 3);
       if (randomChildNumber == 0) {
-        food.src = "images/fish.png";
+        food.src = "../images/fish.png";
       } else if (randomChildNumber == 1) {
-        food.src = "images/can.png";
+        food.src = "../images/can.png";
       } else {
-        food.src = "images/milk.png";
+        food.src = "../images/milk.png";
       }
       //console.log("draw food:", food);
       food.onload = function () {
@@ -90,7 +90,7 @@ $(document).ready(() => {
       };
 
       setTimeout(function () {
-        $("#life").attr("src", "images/life" + life + ".png");
+        $("#life").attr("src", "../images/life" + life + ".png");
         ctx.clearRect(220, 148, 100, 100);
       }, 3000);
     }

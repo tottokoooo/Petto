@@ -33,7 +33,7 @@ $(document).ready(() => {
             //     "_single.jpg><br><br>"
             // );
             let yourCat =
-              "images/" + finalAnswers[finalResult][1] + "_single.jpg";
+              "../images/" + finalAnswers[finalResult][1] + "_single.jpg";
             $("#question_cat_img img").attr("src", yourCat);
             //放取名字框框
             $("#question").append(
