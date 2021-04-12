@@ -60,6 +60,10 @@ body {
   background-color: white;
 }
 
+#start_button:hover {
+  color: black;
+}
+
 /* computer */
 @media screen and (min-width: 426px) {
   #tit {

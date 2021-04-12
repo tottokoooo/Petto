@@ -36,6 +36,10 @@ body {
   color: gray; /*本身的顏色*/
 }
 
+#start_button:hover {
+  color: black;
+}
+
 /* computer */
 @media screen and (min-width: 426px) {
   #tit {
