@@ -12,7 +12,7 @@ body {
 }
 
 #tit {
-  height: 150px;
+  height: 100px;
   display: flex;
   flex-direction: row;
 }
