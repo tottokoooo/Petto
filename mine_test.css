@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+}
+/*每頁上方的LOGO*/
+#logo {
+  font-family: "Press Start 2P", cursive;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tit {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo_img {
+  width: 300px;
+}
+
+#question_cat_img img {
+  width: 150px;
+}
+#question {
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+#options {
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+#startButton {
+  border: 0;
+  font-size: 20px;
+  border-radius: 5px;
+  /*outline: none; 按下去時不會出現邊框*/
+}
+
+#cat_name {
+  cursor: pointer; /*指標過去時會變成手指*/
+  background: rgb(231, 231, 231);
+  border: 0 none;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 20px;
+  width: 120px;
+}
+
+#only_button {
+  border: thin;
+  background-color: white;
+}
+
+/* computer */
+@media screen and (min-width: 426px) {
+  #tit {
+    height: 100px;
+  }
+
+  #logo_img {
+    width: 200px;
+  }
+
+  /*----------心理測驗-------------------------------------------*/
+  #question_cat_img img {
+    width: 180px;
+  }
+  #question {
+    font-size: 20px;
+  }
+  #options {
+    font-size: 20px;
+  }
+  #startButton {
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  #cat_name {
+    border-radius: 5px;
+    height: 25px;
+    font-size: 20px;
+    width: 100px;
+  }
+}

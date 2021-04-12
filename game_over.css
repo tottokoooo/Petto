@@ -1,0 +1,46 @@
+/*----------首頁-------------------------------------------*/
+body {
+  text-align: center;
+}
+/*每頁上方的LOGO*/
+#logo {
+  font-family: "Press Start 2P", cursive;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tit {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo_img {
+  width: 300px;
+}
+
+#only_button {
+  border: thin;
+  background-color: white;
+}
+
+#game_over_cat {
+  width: 180px;
+}
+
+/* computer */
+@media screen and (min-width: 426px) {
+  #tit {
+    height: 100px;
+  }
+
+  #logo_img {
+    width: 200px;
+  }
+
+  #game_over_cat {
+    width: 150px;
+  }
+}
