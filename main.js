@@ -1,4 +1,4 @@
-let beginx_m = [10, 320, 630];
+let beginx_m = [0, 330, 660];
 
 $(document).ready(() => {
   let mycamvas = document.getElementById("home_page");
@@ -11,7 +11,7 @@ $(document).ready(() => {
     let beginx = 0; //裁減圖片的x軸座標，由左往右遞增
     setInterval(function () {
       ctx.clearRect(0, 0, 300, 120); //清除主角
-      ctx.drawImage(imgCat, beginx_m[beginx], 10, 300, 300, 80, 0, 150, 150); //畫上主角
+      ctx.drawImage(imgCat, beginx_m[beginx], 0, 330, 330, 80, 0, 150, 150); //畫上主角
       beginx++;
       beginx %= 3;
     }, 750);

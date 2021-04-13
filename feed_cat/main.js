@@ -18,7 +18,7 @@ function update_life() {
   localStorage.setItem("life", life);
 }
 
-let beginx_m = [10, 320, 630];
+let beginx_m = [0, 330, 660];
 
 let SetMinute = parseInt(localStorage.getItem("age_second"), 10);
 function Check_Time() {
@@ -46,7 +46,7 @@ $(document).ready(() => {
     setInterval(() => {
       ctx.clearRect(60, 50, 150, 150);
       //console.log("draw cat");
-      ctx.drawImage(imgCat, beginx_m[beginx], 10, 300, 300, 60, 50, 150, 150);
+      ctx.drawImage(imgCat, beginx_m[beginx], 0, 330, 330, 60, 50, 150, 150);
       beginx++;
       beginx %= 3;
     }, 500);
