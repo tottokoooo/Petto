@@ -78,10 +78,3 @@ $(document).ready(() => {
     localStorage.setItem("name", document.querySelector(".textContent").value); //紀錄名字
   });
 });
-
-function changeColor() {
-  $("#start_button").css("color", "black");
-}
-function changeColorBack() {
-  $("#start_button").css("color", "gray");
-}

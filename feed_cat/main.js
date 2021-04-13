@@ -1,13 +1,6 @@
 let birthday = localStorage.getItem("birth");
 birthday = birthday.split(" ");
 
-function changeColor() {
-  $("#start_button").css("color", "black");
-}
-function changeColorBack() {
-  $("#start_button").css("color", "gray");
-}
-
 let life = parseInt(localStorage.getItem("life"), 10);
 var myVar = setInterval(() => {
   update_life();
